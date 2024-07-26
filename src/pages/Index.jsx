@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Rocket, Zap, Shield } from "lucide-react";
+import { CheckCircle, Rocket, Zap, Shield, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const Index = () => {
   return (
@@ -71,6 +71,50 @@ const Index = () => {
           <Button size="lg" className="bg-pink-600 text-white hover:bg-pink-700">Start Your Free Trial</Button>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Company</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-600 hover:text-pink-600">About Us</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-pink-600">Careers</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-pink-600">Press</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Product</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-600 hover:text-pink-600">Features</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-pink-600">Pricing</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-pink-600">Integrations</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Resources</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-600 hover:text-pink-600">Blog</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-pink-600">Help Center</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-pink-600">Documentation</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Connect</h3>
+              <div className="flex space-x-4">
+                <a href="#" className="text-gray-600 hover:text-pink-600"><Facebook size={24} /></a>
+                <a href="#" className="text-gray-600 hover:text-pink-600"><Twitter size={24} /></a>
+                <a href="#" className="text-gray-600 hover:text-pink-600"><Instagram size={24} /></a>
+                <a href="#" className="text-gray-600 hover:text-pink-600"><Linkedin size={24} /></a>
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 pt-8 border-t border-gray-200 text-center">
+            <p className="text-gray-600">&copy; 2024 Your SaaS Company. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
