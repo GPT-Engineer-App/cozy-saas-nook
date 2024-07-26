@@ -6,11 +6,11 @@ const Index = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-20">
+      <section className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white py-20">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Revolutionize Your Workflow</h1>
           <p className="text-xl md:text-2xl mb-8">Streamline your business processes with our cutting-edge SaaS solution</p>
-          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">Get Started Free</Button>
+          <Button size="lg" className="bg-white text-pink-600 hover:bg-gray-100">Get Started Free</Button>
         </div>
       </section>
 
@@ -20,17 +20,17 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard
-              icon={<Rocket className="h-8 w-8 text-purple-600" />}
+              icon={<Rocket className="h-8 w-8 text-pink-600" />}
               title="Boost Productivity"
               description="Streamline your workflow and get more done in less time."
             />
             <FeatureCard
-              icon={<Zap className="h-8 w-8 text-purple-600" />}
+              icon={<Zap className="h-8 w-8 text-pink-600" />}
               title="Real-time Collaboration"
               description="Work seamlessly with your team, no matter where they are."
             />
             <FeatureCard
-              icon={<Shield className="h-8 w-8 text-purple-600" />}
+              icon={<Shield className="h-8 w-8 text-pink-600" />}
               title="Enterprise-grade Security"
               description="Your data is safe and secure with our advanced protection."
             />
@@ -68,7 +68,7 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
           <p className="text-xl mb-8">Join thousands of satisfied customers and take your productivity to the next level.</p>
-          <Button size="lg" className="bg-purple-600 text-white hover:bg-purple-700">Start Your Free Trial</Button>
+          <Button size="lg" className="bg-pink-600 text-white hover:bg-pink-700">Start Your Free Trial</Button>
         </div>
       </section>
     </div>
@@ -90,7 +90,7 @@ const FeatureCard = ({ icon, title, description }) => (
 );
 
 const PricingCard = ({ title, price, features, highlighted = false }) => (
-  <Card className={`flex flex-col ${highlighted ? 'border-purple-600 border-2' : ''}`}>
+  <Card className={`flex flex-col ${highlighted ? 'border-pink-600 border-2' : ''}`}>
     <CardHeader>
       <CardTitle className="text-2xl font-bold">{title}</CardTitle>
       <p className="text-4xl font-bold">{price}<span className="text-sm font-normal">/month</span></p>
